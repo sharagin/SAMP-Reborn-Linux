@@ -1,0 +1,43 @@
+name: Package SAMP Reborn for Linux
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+
+jobs:
+  bundle:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Prepare bundle directory
+        run: |
+          mkdir -p dist/SAMP-Reborn
+          cp -r client dist/SAMP-Reborn/
+          cp launcher.sh dist/SAMP-Reborn/
+          cp samp.desktop dist/SAMP-Reborn/
+          chmod +x dist/SAMP-Reborn/launcher.sh
+          chmod +x dist/SAMP-Reborn/samp.desktop
+
+      - name: Compress Linux package
+        run: |
+          cd dist
+          tar -czvf ../samp-reborn-linux.tar.gz SAMP-Reborn
+
+      - name: Upload Build Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: samp-reborn-linux
+          path: samp-reborn-linux.tar.gz
+
+      - name: Publish to GitHub Releases
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: samp-reborn-linux.tar.gz
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
