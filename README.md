@@ -211,5 +211,5 @@ cd SAMP-Reborn</code></pre>
 <hr />
 
 <div align="center">
-  <p><sub>Maintained by <a href="https://github.com/sharagin">sharagin</a> • Project released under the MIT License</sub></p>
+  <p><sub>Maintained by <a href="https://github.com/sharagin">sharagin</a> • Project released under the Alpache License 2.0</sub></p>
 </div>
