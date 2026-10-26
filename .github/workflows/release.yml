@@ -19,7 +19,17 @@ jobs:
           mkdir -p dist/SAMP-Reborn
           cp -r client dist/SAMP-Reborn/
           cp launcher.sh dist/SAMP-Reborn/
-          cp samp.desktop dist/SAMP-Reborn/
+
+          cat << 'EOF' > dist/SAMP-Reborn/samp.desktop
+          [Desktop Entry]
+          Name=SAMP Reborn
+          Exec=bash -c "$(dirname %k)/launcher.sh"
+          Icon=utilities-terminal
+          Terminal=false
+          Type=Application
+          Categories=Game;
+          EOF
+
           chmod +x dist/SAMP-Reborn/launcher.sh
           chmod +x dist/SAMP-Reborn/samp.desktop
 
