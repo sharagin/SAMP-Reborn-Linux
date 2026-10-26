@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=SAMP Reborn
+Exec=bash -c "$(dirname %k)/launcher.sh"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+Categories=Game;
