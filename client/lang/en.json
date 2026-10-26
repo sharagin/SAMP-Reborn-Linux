@@ -1,0 +1,211 @@
+{
+    "title": {
+        "settings": "Settings",
+        "export": "Export Favorites",
+        "import": "Import Favorites",
+        "rcon": "Remote Console Config",
+        "serverProperties": "Server Properties - ( Just click \"Connect\"! )",
+        "update": "Update found!",
+        "sampselect": "Select SAMP Version"
+    },
+    "window": {
+        "main": {
+            "playerName": "   Name: ",
+            "nickHistory": {
+                "empty": "Nick history is empty",
+                "filled": "Nick history is available!",
+                "clear": "Clear nick history"
+            },
+            "switch": {
+                "trilogy": "TrilogyMP (in progress)",
+                "samp": "Switch to SAMP"
+            },
+            "topBar": {
+                "file": {
+                    "name": "File",
+                    "import": "Import Favorites List",
+                    "export": "Export Favorites List",
+                    "exit": "Exit"
+                },
+                "view": {
+                    "name": "View",
+                    "filter": "Filter / Server Info",
+                    "status": "Status Bar"
+                },
+                "servers": {
+                    "name": "Servers",
+                    "connect": "Connect",
+                    "add": "Add Server",
+                    "edit": "Edit Server",
+                    "delete": "Delete Server",
+                    "refresh": "Refresh Server",
+                    "masterUpdate": "Master Server Update",
+                    "copy": "Copy Server Info",
+                    "properties": "Server Properties"
+                },
+                "tools": {
+                    "name": "Tools",
+                    "settings": "Settings"
+                },
+                "help": {
+                    "name": "Help",
+                    "doc": "Documentation",
+                    "about": "About",
+                    "update": "Check updates"
+                }
+            },
+            "serverList": {
+                "hostname": "Hostname",
+                "players": "Players",
+                "ping": "Ping",
+                "mode": "Mode",
+                "language": "Language"
+            },
+            "playerList": {
+                "player": "Player",
+                "score": "Score"
+            },
+            "ruleList": {
+                "rule": "Rule",
+                "value": "Value"
+            },
+            "tabs": {
+                "favorites": "    Favorites   ",
+                "internet": "    Internet    "
+            },
+            "filter": {
+                "name": "Filter",
+                "notEmpty": "Not Empty",
+                "notFull": "Not Full",
+                "noPassword": "No Password",
+                "inverted": {
+                    "name": "Inverted",
+                    "hint": "Looks for where the filter value is NOT contained"
+                }
+            },
+            "ip": "Address",
+            "serverInfo": " Server Info: ",
+            "statusBar": "Servers: $players players, playing on $servers servers. ($slots player slots available)",
+            "importFavorites": {
+                "filter": "SA-MP Favorites List (*.fav)|*.fav",
+                "title": "Import Favorites",
+                "invalidFile": "Invalid SA-MP file.",
+                "badFile": "Bad SA-MP favorites file version. Your client may need updating."
+            },
+            "exportFavorites": {
+                "title": "Export Favorites",
+                "overwrite": "File $file already exists. Overwrite?"
+            },
+            "serverPassword": {
+                "title": "Server Password",
+                "text": "This server requires a password..."
+            },
+            "enterNick": {
+                "title": "Who are you?",
+                "text": "Enter your nickname/handle..."
+            },
+            "addServer": {
+                "title": "Add Server",
+                "text": "Enter new server HOST:PORT...",
+                "alreadyInList": "This server is already on your list."
+            },
+            "editServer": {
+                "title": "Edit Server",
+                "text": "Enter new server HOST:PORT...",
+                "alreadyInList": "This server is already on your list."
+            },
+            "retvieveInfo": "(Retrieving info...) ",
+            "setGtaPath": {
+                "title": "GTA: San Andreas Installation",
+                "text": "GTA: San Andreas executable not found. Please locate it now.",
+                "abort": "GTA: San Andreas executable STILL not found. Aborting launch."
+            },
+            "setTrilogyPath": {
+                "text": "Definitive Edition executable not found. Please locate it now.",
+                "abort": "Definitive Edition executable STILL not found. Aborting launch."
+            },
+            "unableExecute": "Unable to execute.",
+            "favoritesAddExecute": "Do you want to add $ip:$port to your favorites or play on this server now?",
+            "copy": "Copy"
+        },
+        "settings": {
+            "passwords": "Passwords",
+            "autoSave": {
+                "server": "Auto-Save Server Passwords",
+                "rcon": "Auto-Save Rcon Passwords"
+            },
+            "darkMode": "Dark theme",
+            "russian": "Russian language",
+            "installation": {
+                "sa": "San Andreas Installation Location:",
+                "trilogy": "Definitive Edition (in progress)"
+            },
+            "buttons": {
+                "save": "Save",
+                "cancel": "Cancel"
+            }
+        },
+        "export": {
+            "savedPasswords": "Include Saved Passwords"
+        },
+        "import": {
+            "add": "Add to current favorites",
+            "replace": "Replace current favorites"
+        },
+        "masterUpdate": {
+            "title": "Please Wait",
+            "text": "Retrieving list from master server..."
+        },
+        "rcon": {
+            "host": "Host:Port -",
+            "password": "Password -",
+            "buttons": {
+                "connect": "Connect",
+                "cancel": "Cancel"
+            }
+        },
+        "serverProperties": {
+            "serverPassword": "Server Password:",
+            "rconPassword": "RCON Password:",
+            "buttons": {
+                "connect": "Connect",
+                "save": "Save",
+                "cancel": "Cancel"
+            }
+        },
+        "url": {
+            "text": "Play on this server now or add to favorites?",
+            "buttons": {
+                "play": "Play",
+                "favorites": "Add to Favorites",
+                "cancel": "Cancel"
+            }
+        },
+        "update": {
+            "title": "Update is available!",
+            "notFound": {
+                "title": "You are up to date!",
+                "description": "New updates not found."
+            },
+            "buttons": {
+                "install": "Install",
+                "skip": "Skip this update"
+            }
+        },
+        "sampselect": {
+            "title": "Please select SAMP version to install",
+            "description": "Description: ",
+            "buttons": {
+                "cancel": "Cancel"
+            }
+        },
+        "unfoundfiles": {
+            "title": "Some SAMP files not found!",
+            "message": "In selected game category not found SAMP files: $files Do you want to install them automatically?"
+        },
+        "unfoundversions": {
+            "title": "File not found",
+            "message": "Can`t find file /samp_files/versions.json. Restore versions.json or install samp.dll manually."
+        }
+    }
+}
